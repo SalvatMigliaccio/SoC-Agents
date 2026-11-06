@@ -1,0 +1,22 @@
+[project]
+name = "soc-agent"
+version = "0.1.0"
+description = "Local SOC triage AI agent with LM Studio, built twice: without a framework and with LangChain"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "langchain>=1.4.9",
+    "langchain-openai>=1.7.4",
+    "langgraph>=1.2.20",
+    "openai>=3.46.0",
+    "requests>=2.34.2",
+]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
+
+[dependency-groups]
+dev = [
+    "pytest>=9.2.0",
+]
