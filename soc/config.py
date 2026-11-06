@@ -3,9 +3,12 @@ import os
 from pathlib import Path
 
 BASE = Path(__file__).resolve().parent.parent
-DATES = BASE / "dates"
+DATES = BASE / "data"
 REPORTS = BASE / "reports"
 BLOCKLIST = BASE / "blocklist_proposal.txt"
+DATA_DIR = DATES
+REPORTS_DIR = REPORTS
+BLOCKLIST_FILE = BLOCKLIST
 
 LMSTUDIO_URL = os.getenv("LMSTUDIO_URL", "http://localhost_1234/v1")
 MODEL = os.getenv("MODEL", "qwen3.5-4b")
@@ -16,3 +19,5 @@ NVD_URL = "https://services.nvd.nist.gov/rest/json/cves/2.0"
 MAX_RETRIES = 25
 
 # 
+MAX_STEPS = 25
+MODEL_NAME = MODEL

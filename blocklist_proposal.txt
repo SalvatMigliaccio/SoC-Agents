@@ -1,0 +1,5 @@
+2026-11-06 19:17 DROP 198.51.100.23 # SSH brute-force attack: 80 failed authentication attempts detected in auth.log. IP present in threat
+2026-11-06 19:17 DROP 198.51.100.77 # Successful brute force attack: 35 failed attempts followed by successful login as 'backup' user in a
+2026-11-06 19:17 DROP 203.0.113.45 # Web attack: SQL injection (12 requests) and XSS attacks detected in access.log. IP present in threat
+2026-11-06 19:18 DROP 192.0.2.150 # Web attack: Path traversal attacks detected in access.log attempting to access /etc/shadow file. Cle
+2026-11-06 19:18 DROP 203.0.113.99 # Web attack: Log4Shell exploit (CVE-2021-44228) detected in access.log. IP present in threat intellig
